@@ -90,9 +90,9 @@
       <p><em>(The template's contents are present in the HTML source but not displayed.)</em></p>
     </section>
 
-    <!-- Extra Credit: MathML equation + explanation -->
+    <!--Extra Credit MathML-->
     <section>
-      <h3>Extra Credit — MathML</h3>
+      <h3>Extra Credit MathML</h3>
       <p>Einstein's mass-energy equivalence formula rendered using MathML:</p>
 
       <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -105,17 +105,18 @@
         </msup>
       </math>
 
-      <h3>Why MathML wasn't usable until recently</h3>
+      <h3>Why was MathML wasn't usable until recently?</h3>
       <p>
-        Although MathML has been part of the HTML specification for over two decades,
-        developers largely couldn't rely on it until recently. According to
-        <a href="https://caniuse.com/mathml">caniuse.com</a>, browser support was historically
-        <strong>inconsistent and incomplete</strong>: Firefox supported MathML natively for years,
-        but Chrome, Edge, and Safari either lacked native support entirely or offered only partial
-        implementations, forcing developers to rely on JavaScript libraries like MathJax to render
-        equations reliably. It wasn't until Chrome 109 (released in early 2023) added native
-        <em>MathML Core</em> support that all major browsers finally converged on a shared, native
-        rendering path — making it practical to use MathML directly in production for the first time.
+          Even though <strong>MathML</strong> has technically been part of the HTML spec for 
+          a really long time, developers basically couldn't use it until recently because browser support 
+          was all over the place. When I checked <a href="https://caniuse.com/mathml">caniuse.com</a>, 
+          I saw that <em>Firefox</em> supported MathML for years, but <em>Chrome, Edge, and Safari</em> 
+          either didn't support it at all or only supported parts of it. This meant that if you tried to 
+          write an equation in MathML, it might look great in Firefox but completely break in Chrome, so 
+          most developers just avoided it and used JavaScript libraries like <strong>MathJax</strong> 
+          instead to render math. Chrome didn't add real native support until version 109 in early 2023, 
+          which is when it finally became something you could actually use across all major browsers without
+          a fallback.
       </p>
     </section>
 
