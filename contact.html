@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Arrissa Calvillo.">
+  <title>Contact — Arrissa Calvillo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body { border: 1px solid black; }
+    header, footer, main, section, nav, form, fieldset, dialog { border: 1px solid black; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arrissa Calvillo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Get In Touch</h2>
+      <p>Send me a message using the form below, or reach out via the links on the right.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <br>
+
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <br>
+
+          <div>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <br>
+
+          <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+          </div>
+          <br>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+
+      <noscript>
+        <p><em>Note: no JavaScript is required to view or fill out this form.</em></p>
+      </noscript>
+    </section>
+
+    <section>
+      <h2>Contact Info</h2>
+      <ul>
+        <li><b>Email:</b> arcalvillo@ucsd.edu</li>
+        <li><b>Located:</b> San Diego, CA</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Follow Me</h2>
+      <ul>
+        <li><a href="https://github.com/arcalvillo">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <!-- dialog element (unopened by default) satisfies tag requirement -->
+    <dialog id="confirm-dialog">
+      <p>Thank you! Your message has been received.</p>
+      <button>Close</button>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <p>
+      <span>© 2026 Arrissa Calvillo</span> ·
+      <a href="index.html">Back to home</a>
+    </p>
+  </footer>
+
+</body>
+</html>

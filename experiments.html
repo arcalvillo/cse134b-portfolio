@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experimental tags demonstration — template, audio, video, canvas, source, and MathML.">
+  <title>Experiments — Arrissa Calvillo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body { border: 1px solid black; }
+    header, footer, main, section, nav { border: 1px solid black; }
+    canvas { border: 1px solid black; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arrissa Calvillo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Experiments</h2>
+      <p>
+        This page demonstrates a handful of HTML5 tags that don't appear elsewhere in the site.
+        Each block below is a minimal example of a specific tag in use.
+      </p>
+    </section>
+
+    <section>
+      <h3>Audio Demo</h3>
+      <p>Audio element with multiple sources for fallback:</p>
+      <audio controls>
+        <source src="media/sample.mp3" type="audio/mpeg">
+        <source src="media/sample.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h3>Video Demo</h3>
+      <p>Video element with multiple sources for fallback:</p>
+      <video controls width="400">
+        <source src="media/sample.mp4" type="video/mp4">
+        <source src="media/sample.webm" type="video/webm">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section>
+      <h3>Canvas Demo</h3>
+      <p>Canvas element with a simple rectangle drawn via minimal JavaScript:</p>
+      <canvas id="demo-canvas" width="200" height="100">
+        Your browser does not support the canvas element.
+      </canvas>
+      <!-- Minimal JS strictly to demonstrate the canvas tag (< 15 lines per assignment rules) -->
+      <script>
+        const canvas = document.getElementById('demo-canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'black';
+        ctx.fillRect(20, 20, 60, 60);
+        ctx.strokeStyle = 'black';
+        ctx.strokeRect(100, 20, 60, 60);
+      </script>
+    </section>
+
+    <section>
+      <h3>Template Demo</h3>
+      <p>
+        A <code>&lt;template&gt;</code> element holds inert content — content that exists in the
+        HTML but is not rendered by the browser on parse. Useful for defining reusable views.
+      </p>
+      <template id="reusable-card">
+        <article>
+          <h4>Reusable Card</h4>
+          <p>This content lives inside a template tag and is not rendered on the page.</p>
+        </article>
+      </template>
+      <p><em>(The template's contents are present in the HTML source but not displayed.)</em></p>
+    </section>
+
+    <!-- Extra Credit: MathML equation + explanation -->
+    <section>
+      <h3>Extra Credit — MathML</h3>
+      <p>Einstein's mass-energy equivalence formula rendered using MathML:</p>
+
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </math>
+
+      <h3>Why MathML wasn't usable until recently</h3>
+      <p>
+        Although MathML has been part of the HTML specification for over two decades,
+        developers largely couldn't rely on it until recently. According to
+        <a href="https://caniuse.com/mathml">caniuse.com</a>, browser support was historically
+        <strong>inconsistent and incomplete</strong>: Firefox supported MathML natively for years,
+        but Chrome, Edge, and Safari either lacked native support entirely or offered only partial
+        implementations, forcing developers to rely on JavaScript libraries like MathJax to render
+        equations reliably. It wasn't until Chrome 109 (released in early 2023) added native
+        <em>MathML Core</em> support that all major browsers finally converged on a shared, native
+        rendering path — making it practical to use MathML directly in production for the first time.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      <span>© 2026 Arrissa Calvillo</span> ·
+      <a href="index.html">Back to home</a>
+    </p>
+  </footer>
+
+</body>
+</html>

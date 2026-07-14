@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Arrissa Calvillo's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Arrissa Calvillo, a Computer Science student at UC San Diego.">
+  <meta name="author" content="Arrissa Calvillo">
+  <title>Arrissa Calvillo — CS Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Allowed border-only styling for base page structure -->
+  <style>
+    body { border: 1px solid black; }
+    header, footer, main, section, article, nav { border: 1px solid black; }
+    intro-card { border: 2px solid black; display: block; padding: 1em; }
+  </style>
+
+  <!-- Placeholder script for a third-party analytics service (not active) -->
+  <script type="text/javascript" src="analytics-placeholder.js" defer></script>
 </head>
 <body>
-  <h1>Placeholder</h1>
+
+  <header>
+    <h1>Arrissa Calvillo</h1>
+    <p><em>CSE Student · UC San Diego</em></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Welcome! I'm Arrissa.</h2>
+      <p>
+        <strong>One liner intro:</strong> Come poke around <em>under the hood</em> and see what's running.
+      </p>
+      <p>
+        I'm a Computer Science student at UC San Diego with interests spanning
+        machine learning, web development, and building things that solve real problems.
+        This site is <b>a living archive</b> of what I'm working on and what I've learned along the way.
+      </p>
+    </section>
+
+    <!-- Semantic CSS custom element -->
+    <intro-card>
+      <h3>Quick Introduction</h3>
+      <p>Here's what you'll find on this site:</p>
+      <ul>
+        <li><a href="projects.html">Projects</a> — self-directed work, including competitions</li>
+        <li><a href="coursework.html">Coursework</a> — notable assignments from my CS courses</li>
+        <li><a href="resume.html">Resume</a> — a downloadable snapshot of my experience</li>
+      </ul>
+    </intro-card>
+
+    <br>
+
+    <section>
+      <h2>Featured</h2>
+      <article>
+        <h3>Kaggle: Small LLM Math Reasoning</h3>
+        <p>
+          I've been working on improving mathematical reasoning capabilities of a small language model
+          (Qwen3-4B) using prompt engineering, supervised fine-tuning, and reinforcement learning.
+          <a href="qwen-math-llm.html">Read more →</a>
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      <span>© 2026 Arrissa Calvillo</span> ·
+      <a href="https://github.com/arcalvillo">GitHub</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <!-- Hello World custom element definition (JS only used to satisfy assignment's custom element requirement) -->
+  <script>
+    class HelloWorld extends HTMLElement {
+      connectedCallback() {
+        console.log("Hello World!");
+      }
+    }
+    customElements.define('hello-world', HelloWorld);
+  </script>
+  <hello-world></hello-world>
+
+  <noscript>
+    <p>This site works fine without JavaScript — the only script is for a small console message.</p>
+  </noscript>
+
 </body>
 </html>
